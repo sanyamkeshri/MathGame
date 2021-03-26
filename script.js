@@ -16,12 +16,14 @@ function Login() {
     if(input1Text != null && input2Text != null) {
         localStorage.setItem("player1", input1Text);
         localStorage.setItem("player2", input2Text);
+        window.location = "gamePlay.html";
     }else {
         input1Text = document.getElementById("P1Input").innerHTML;
         input2Text = document.getElementById("P1Input").innerHTML;
         if(input1Text != null && input2Text != null) {
             localStorage.setItem("player1", input1Text);
             localStorage.setItem("player2", input2Text);
+            window.location = "gamePlay.html";
         }
     }
 }
